@@ -1,0 +1,12 @@
+{
+  "name": "tpm",
+  "version": "1.0.0",
+  "description": "js-project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "\"test\": \"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "author": "pavel",
+  "license": "ISC"
+}
