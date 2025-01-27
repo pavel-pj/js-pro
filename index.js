@@ -1,13 +1,21 @@
-import { fill } from './src/lesson7.js';
+import { cloneShallow } from './src/lesson8.js';
 
-const company = {
-  name: null,
-  state: 'moderating',
-};
 
 const data = {
-  name: 'Hexlet',
-  state: 'published',
+    Mama: 'Denia',
+    name: 'adress 100',
+    key2: {
+        key: 'innerValue',
+        innerKey: {
+            anotherKey: 'anotherValue',
+            someAnyKey: {
+                thisNewObj:'adress204',
+                nothingTo: '5500'
+            }
+        },
+    },
 };
 
-fill(company, [ ], data);
+const result = cloneShallow(data);
+console.log( JSON.stringify(result))
+
