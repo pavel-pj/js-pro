@@ -1,21 +1,9 @@
-import { cloneShallow } from './src/lesson8.js';
+import {  make } from './src/lesson11.js';
 
+const company = make('Hexlet');
+console.log(company);
 
-const data = {
-    Mama: 'Denia',
-    name: 'adress 100',
-    key2: {
-        key: 'innerValue',
-        innerKey: {
-            anotherKey: 'anotherValue',
-            someAnyKey: {
-                thisNewObj:'adress204',
-                nothingTo: '5500'
-            }
-        },
-    },
-};
+const company2 = make('Hexlet', { website: 'hexlet.io', state: 'published' });
+console.log(company2);
 
-const result = cloneShallow(data);
-console.log( JSON.stringify(result))
 
